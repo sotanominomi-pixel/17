@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+#app {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#display {
+    font-size: 60px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+button {
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    background: transparent;
+    color: #fff;
+}
+
+button:active {
+    background: #444;
+}
+
+#startStopBtn {
+    width: 140px;
+}
+
+#resetBtn {
+    width: 140px;
+}
+
+input[type="time"] {
+    margin-bottom: 15px;
+    font-size: 20px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+label {
+    font-size: 18px;
+}
+
+.slider-area {
+    margin: 30px auto;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 90%;
+    height: 10px;
+    background: #555;
+    border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 26px;
+    height: 26px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#sliderValue {
+    font-size: 16px;
+}
+
+.bottom-switch {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tab {
+    font-size: 20px;
+    width: 33%;
+    padding: 12px 0;
+}
+
+.tab.active {
+    background: #fff;
+    color: #000;
+}
+
+.hidden {
+    display: none;
+}
