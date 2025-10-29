@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>N Clock</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+    <div id="display"></div>
+
+    <!-- ストップウォッチ -->
+    <div id="stopwatchControls" class="hidden">
+        <button id="startStopBtn">START</button>
+        <button id="resetBtn">RESET</button>
+    </div>
+
+    <!-- アラーム設定 -->
+    <div id="alarmControls" class="hidden">
+        <input type="time" id="alarmTime">
+        <label>
+            <input type="checkbox" id="alarmToggle">
+            アラーム ON
+        </label>
+    </div>
+
+    <!-- 1日の長さ（速度調整） -->
+    <div class="slider-area">
+        <input type="range" id="speedSlider" min="12" max="48" value="24">
+        <span id="sliderValue">24h/day</span>
+    </div>
+
+    <!-- メニュー切り替え -->
+    <div class="bottom-switch">
+        <button class="tab active" data-target="clock">時計</button>
+        <button class="tab" data-target="stopwatch">ストップ</button>
+        <button class="tab" data-target="alarm">アラーム</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
